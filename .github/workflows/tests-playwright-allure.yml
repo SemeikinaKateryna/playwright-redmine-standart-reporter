@@ -22,9 +22,6 @@ jobs:
     - name: Run Playwright tests
       run: npm run test:headless
 
-    - name: Generate Playwright report
-      run: npx playwright show-report
-
     - name: Upload Playwright report
       uses: actions/upload-artifact@v3
       if: always()
